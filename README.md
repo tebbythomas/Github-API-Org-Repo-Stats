@@ -1,13 +1,13 @@
-# Django App using the Github API that Displays Stats of an Organization's Github Repository
+# Django App using the Github API that Displays Stats of an Organization's Github Page
 
 An application that displays the top forked repos of an organization and the top contributors for each repo
 <br />
 <br />
-Some of the features included:
-<li><b>Displaying top 'n' repos of an organization (Taking n and the org name as input)</b></li>
-<li><b>For each repo displaying the top 'm' contributors by commit count</b></li>
-<li><b>Github API using Access Token is used</b></li>
-<li><b>Error Validaiton done on the Frontend and Backend</b></li>
+<b>Some of the features included:</b>
+<li>Displaying top 'N' repos of an organization (Taking 'N' and the org name as input)</li>
+<li>For each repo displaying the top 'M' (from user) contributors by commit count</li>
+<li>Github API using Personal Access Token is used</li>
+<li>Error Validaiton done on the Frontend and Backend</li>
 <br />
 <br />
 <b>Technical Details:</b>
@@ -49,7 +49,7 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <b>Requirements of the app:</b>
 <br />
-<a href="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/requirements.txt">Link</a>
+<a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/requirements.txt">Link</a>
 <br />
 <br />
 <b>To run the app:</b>
@@ -57,13 +57,13 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <p>1. Clone the repo</p>
 <br />
-<pre><code>git clone https://github.com/tebbythomas/Django-Employee-Kudos-Management.git
+<pre><code>git clone https://github.com/tebbythomas/Github-API-Org-Repo-Stats.git
 </code></pre>
 <br />
 <br />
 <p>2. Switch to project dir</p>
 <br />
-<pre><code>cd Django-Employee-Kudos-Management-master/
+<pre><code>cd Github-API-Org-Repo-Stats/
 </code></pre>
 <br />
 <br />
@@ -87,7 +87,7 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <p>6. Switch to django project dir</p>
 <br />
-<pre><code>cd kudos_manager/
+<pre><code>cd github_stats_project
 </code></pre>
 <br />
 <br />
@@ -100,7 +100,16 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 </code></pre>
 <br />
 <br />
-<p>8. Run the project</p>
+<p>8. Input Github API Token Here (Line 68):</p>
+<br />
+<a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/requirements.txt">Link</a>
+<br />
+<p>If you don't have one then you can generate one here:</p>
+<br />
+<a href="https://github.com/settings/tokens">Link</a>
+<br />
+<br />
+<p>9. Run the project</p>
 <br />
 <pre><code>python manage.py runserver
 </code></pre>
