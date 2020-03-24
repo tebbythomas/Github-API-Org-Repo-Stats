@@ -3,7 +3,7 @@
 An application that displays the top forked repos of an organization and the top contributors for each repo
 <br />
 <br />
-<b>Some of the features included:</b>
+<h2>Some of the features included:</h2>
 <li>Displaying top 'N' repos of an organization (Taking 'N' and the org name as input)</li>
 <li>For each repo displaying the top 'M' (from user) contributors by commit count</li>
 <li>Github API using Personal Access Token is used</li>
