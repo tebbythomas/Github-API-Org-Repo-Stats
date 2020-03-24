@@ -10,7 +10,7 @@ An application that displays the top forked repos of an organization and the top
 <li>Error Validaiton done on the Frontend and Backend</li>
 <br />
 <br />
-<b>Technical Details:</b>
+<h2>Technical Details:</h2>
 <br />
 <br />
 <b>Frontend:</b> HTML, JS, CSS (Bootstrap theme: https://bootswatch.com/cosmo/)
@@ -20,7 +20,7 @@ An application that displays the top forked repos of an organization and the top
 <b>Database:</b> SQLite but no models or tables were created
 <br />
 <br /> 
-<b>Github API requests used:</b>
+<h2>Githuh2 API requests used:</h2>
 <br />
 <br />
 <b>1. To check if organization name is valid:</b> 
@@ -47,12 +47,12 @@ https://api.github.com/repos/{org_name}/{repo_name}/contributors?&per_page={resu
 https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <br />
-<b>Requirements of the app:</b>
+<h2>Requirements of the app:</h2>
 <br />
 <a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/requirements.txt">Link</a>
 <br />
 <br />
-<b>To run the app:</b>
+<h2>To run the app:</h2>
 <br />
 <br />
 <p>1. Clone the repo</p>
