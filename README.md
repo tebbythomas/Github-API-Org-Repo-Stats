@@ -20,7 +20,7 @@ An application that displays the top forked repos of an organization and the top
 <b>Database:</b> SQLite but no models or tables were created
 <br />
 <br /> 
-<h2>Githuh2 API requests used:</h2>
+<h2>Github API requests used:</h2>
 <br />
 <br />
 <b>1. To check if organization name is valid:</b> 
@@ -55,43 +55,43 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <h2>To run the app:</h2>
 <br />
 <br />
-<p>1. Clone the repo</p>
+<p><b>1. Clone the repo</b></p>
 <br />
 <pre><code>git clone https://github.com/tebbythomas/Github-API-Org-Repo-Stats.git
 </code></pre>
 <br />
 <br />
-<p>2. Switch to project dir</p>
+<p><b>2. Switch to project dir</b></p>
 <br />
 <pre><code>cd Github-API-Org-Repo-Stats/
 </code></pre>
 <br />
 <br />
-<p>3. Create a python virtual environment</p>
+<p><b>3. Create a python virtual environment</b></p>
 <br />
 <pre><code>python3 -m venv proj_env
 </code></pre>
 <br />
 <br />
-<p>4. Activate the environment</p>
+<p><b>4. Activate the environment</b></p>
 <br />
 <pre><code>source proj_env/bin/activate
 </code></pre>
 <br />
 <br />
-<p>5. Install requirements</p>
+<p><b>5. Install requirements</b></p>
 <br />
 <pre><code>pip install -r requirements.txt
 </code></pre>
 <br />
 <br />
-<p>6. Switch to django project dir</p>
+<p><b>6. Switch to django project dir</b></p>
 <br />
 <pre><code>cd github_stats_project
 </code></pre>
 <br />
 <br />
-<p>7. Make DB migrations</p>
+<p><b>7. Make DB migrations</b></p>
 <br />
 <pre><code>python manage.py makemigrations
 </code></pre>
@@ -100,23 +100,23 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 </code></pre>
 <br />
 <br />
-<p>8. Input Github API Token Here (Line 68):</p>
+<p><b>8. Input Github API Token Here (Line 68):</b></p>
 <br />
 <a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/github_stats_project/github_stats_app/top_dev_org_contributors.py">Link</a>
 <br />
 <br />
-<p>If you don't have one then you can generate one here:</p>
+<p><b>If you don't have one then you can generate one here:</b></p>
 <br />
 <a href="https://github.com/settings/tokens">Link</a>
 <br />
 <br />
-<p>9. Run the project</p>
+<p><b>9. Run the project</b></p>
 <br />
 <pre><code>python manage.py runserver
 </code></pre>
 <br />
 <br />
-<b>Screenshots:</b>
+<h2>Screenshots:</h2>
 <br />
 <br />
 1. <b>Home Page</b>:
@@ -149,5 +149,5 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Github-Token-Access-Limit.png" hspace="20">
 <br />
 <br />
-<b>Command Line Version of the App:</b><br />
-<a href="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/requirements.txt">Link</a>
+<h2>Command Line Version of the App:</h2><br />
+<a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/top_dev_org_contributors.py">Link</a>
