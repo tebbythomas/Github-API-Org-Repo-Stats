@@ -134,7 +134,7 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Valid-Company-Check.png" hspace="20">
 <br />
 <br />
-4. <b>List of 'N' Top 'N' Forked Repositories of the Organization</b>:
+4. <b>List of the Top 'N' Forked Repositories of the Organization</b>:
 <br />
 <img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Repos-List.png" hspace="20">
 <br />
