@@ -102,7 +102,8 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <p>8. Input Github API Token Here (Line 68):</p>
 <br />
-<a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/requirements.txt">Link</a>
+<a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/github_stats_project/github_stats_app/top_dev_org_contributors.py">Link</a>
+<br />
 <br />
 <p>If you don't have one then you can generate one here:</p>
 <br />
@@ -120,32 +121,32 @@ https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 1. <b>Home Page</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Register_Screen.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Home-Page.png" hspace="20">
 <br />
 <br />
 2. <b>Form Input Validation Check</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Login_Screen.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Input-Validation.png" hspace="20">
 <br />
 <br />
 3. <b>Check if the organization name is valid using Github API</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Dashboard.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Valid-Company-Check.png" hspace="20">
 <br />
 <br />
 4. <b>List of 'N' Top 'N' Forked Repositories of the Organization</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Upload_Employees.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Repos-List.png" hspace="20">
 <br />
 <br />
 5. <b>List of the Top 'M' Contributors for the Repo</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Upload_Kudos.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Contributors-List.png" hspace="20">
 <br />
 <br />
 6. <b>Github API Rate Limit for a Personal Access Token</b>:
 <br />
-<img src="https://github.com/tebbythomas/Django-Employee-Kudos-Management/blob/master/Screenshots/Upload_Kudos.png" hspace="20">
+<img src="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/Screenshots/Github-Token-Access-Limit.png" hspace="20">
 <br />
 <br />
 <b>Command Line Version of the App:</b><br />
