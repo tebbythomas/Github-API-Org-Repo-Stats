@@ -1,0 +1,60 @@
+{% extends 'base.html' %} 
+<!-- Custom Title -->
+{% block title %} Results - Repositories {% endblock %} 
+{% block content %}
+<div>
+  <div class="card card-body mt-4 mb-4">
+    <h3><b>Inputs Entered:</b></h3><br />
+    <h4><b>Company:</b> {{ org }}, <b>N:</b> {{ n }}, <b>M:</b> {{ m }}<br />
+    <br />
+  </div>
+  <!-- Error Section -->
+  {% if error_messages %}
+    <div class="card card-body mt-4 mb-4">
+      <h2><b>Error!</b></h2>
+      <br />
+      {% for error in error_messages %}
+        <h4><b>Message: {{ error }}</b></h4>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% if result_data %}
+      <div class="card card-body mt-4 mb-4">
+        <h2><b>Results - The Top Repositories</b></h2>
+        <br />
+        <p><b>Note:</b> The organization may not have {{ n }} repositories and/or {{ m }} contributors for every repository</p>
+        <br />
+        <!-- Displaying Github Accress Rate Information -->
+        {% if rate_limit %}
+          <h5><b>Github API Access Rate Limit:</b> {{ rate_limit }}</h5>
+          <h5><b>Github API Access Rate Remaining:</b> {{ rate_remaining }}</h5>
+        <br />
+        {% endif %}
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Repository Rank</th>
+              <th>Repository Name</th>
+              <th>Repository Forks Count</th>
+              <th>Get Contributors Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Displaying each repo info -->
+            {% for result_row in result_data %}
+            <tr key="result_row">
+              {% for result_element in result_row %}
+                <td>{{ result_element }}</td>
+              {% endfor %}
+              <!-- URL that directs the user to see contributor info for repo -->
+              <td><a href="{% url 'contributors' org n m result_row.1 %}" target="_blank">Get Contributors</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <br />
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+{% endblock %}

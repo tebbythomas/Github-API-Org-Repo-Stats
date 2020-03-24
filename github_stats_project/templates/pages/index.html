@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock %} 
+{% block content %}
+<div>
+  <div class="card card-body mt-4 mb-4">
+    <h2><b>Enter Inputs</b></h2>
+    <br />
+    <form action="{% url 'repos' %}" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label><b>Organization Name</b></label>
+        <input type="text" class="form-control" name="organization" required/>
+      </div>
+      <div class="form-group">
+        <label
+          ><b
+            >Enter 'N' for the top 'N' most forked repositories in the organization
+          </b></label
+        >
+        <input type="number" class="form-control" name="n" required/>
+      </div>
+      <div class="form-group">
+        <label
+          ><b
+            >Enter 'M' for the top 'M' most active contributors on each repository by
+            commit count</b
+          ></label
+        >
+        <input type="number" class="form-control" name="m" required/>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

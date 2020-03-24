@@ -1,0 +1,57 @@
+{% extends 'base.html' %} 
+<!-- Custom Title -->
+{% block title %} Results - Contributors {% endblock %} 
+{% block content %}
+<div>
+  <div class="card card-body mt-4 mb-4">
+    <h3><b>Inputs Entered:</b></h3><br />
+    <h4><b>Company:</b> {{ org }}, <b>N:</b> {{ n }}, <b>M:</b> {{ m }}<br />
+    <br />
+  </div>
+  <!-- Error Section -->
+  {% if error_messages %}
+    <div class="card card-body mt-4 mb-4">
+      <h2><b>Error!</b></h2>
+      <br />
+      {% for error in error_messages %}
+        <h4><b>Message: {{ error }}</b></h4>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% if result_data %}
+      <div class="card card-body mt-4 mb-4">
+        <h2><b>Results - The Top Contributors for Repository: <br />{{ repo_name }}</b></h2>
+        <br />
+        <p><b>Note:</b> The organization may not have {{ n }} repositories and/or {{ m }} contributors for every repository</p>
+        <br />
+        <!-- Github API Access Info -->
+        {% if rate_limit %}
+          <h5><b>Github API Access Rate Limit:</b> {{ rate_limit }}</h5>
+          <h5><b>Github API Access Rate Remaining:</b> {{ rate_remaining }}</h5>
+        <br />
+        {% endif %}
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Contributor Rank</th>
+              <th>Contributor Login ID</th>
+              <th>Contributor Commits Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Displaying each contributor info -->
+            {% for result_row in result_data %}
+            <tr key="result_row">
+              {% for result_element in result_row %}
+                <td>{{ result_element }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <br />
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+{% endblock %}

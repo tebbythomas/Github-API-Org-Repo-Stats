@@ -1,0 +1,16 @@
+Repo_Rank,Repo_Name,Repo_Forks_Count,Contributor_Rank,Contributor_Login_ID,Contributor_Commit_Count
+1,styleguide,8621,1,eglaysher,25
+1,styleguide,8621,2,IsaacG,25
+1,styleguide,8621,3,tonyruscoe,18
+2,material-design-icons,8201,1,jestelle,38
+2,material-design-icons,8201,2,addyosmani,13
+2,material-design-icons,8201,3,liquidx,9
+3,guava,8189,1,cpovirk,1383
+3,guava,8189,2,kluever,557
+3,guava,8189,3,cgdecker,493
+4,iosched,6054,1,shailen,495
+4,iosched,6054,2,jdkoren,301
+4,iosched,6054,3,nickbutcher,260
+5,googletest,5901,1,gennadiycivil,1279
+5,googletest,5901,2,BillyDonahue,111
+5,googletest,5901,3,kuzkry,68
