@@ -47,6 +47,12 @@ https://api.github.com/repos/{org_name}/{repo_name}/contributors?&per_page={resu
 https://api.github.com/repos/facebook/react/contributors?&per_page=10&page=2
 <br />
 <br />
+<b>4. API request to check the Rate Info including max # of requests and # of requests remaining:</b> 
+<br />
+<b>Format:</b><br />
+https://api.github.com/rate_limit
+<br />
+<br />
 <h2>Requirements of the app:</h2>
 <br />
 <a href="https://github.com/tebbythomas/Github-API-Org-Repo-Stats/blob/master/requirements.txt">Link</a>
